@@ -1,9 +1,8 @@
 import React from "react";
 import KevinThreeD from "../KevinThreeD/KevinThreeD.tsx";
-import Rocket from "../Rocket/Rocket";
 import "./Hero.scss";
 import ProfilePicture from "../../assets/profile.jpg";
-import ArrowDown from "../ArrowDown/ArrowDown";
+import ArrowDown from "../svg-components/ArrowDown/ArrowDown";
 
 function Hero() {
   return (

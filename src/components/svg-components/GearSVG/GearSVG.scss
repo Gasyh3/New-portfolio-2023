@@ -1,0 +1,39 @@
+@import '../../../main.scss';
+
+.gear {
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.gear-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $color-4;
+    transform: translate(-50%, -50%);
+    // animation: spin 1s infinite linear;  
+    animation: spin 2s forwards;
+
+    &:hover {
+        animation: spin 2s infinite;   
+      filter: drop-shadow(0 0 2em #61dafbaa);
+      
+    }
+  }
+  
+  
+  @keyframes spin {
+    from {
+      transform: 
+        translate(-50%, -50%)
+        rotate(0);
+    }
+    to {
+      transform: 
+        translate(-50%, -50%)      
+        rotate(359deg);
+    }
+  }

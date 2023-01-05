@@ -1,4 +1,4 @@
-@import '../../main.scss';
+@import '../../../main.scss';
 
 
 .clouds {
@@ -8,7 +8,7 @@
   }
   
   .cloud1 {
-      top: 80px;
+      top: 10px;
     z-index: 100;
     fill: #ababab;
     /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
@@ -19,7 +19,7 @@
   }
   
   .cloud2 {
-      top: 240px;
+      top: 140px;
     z-index: 200;
     fill: #cccccc;
     -webkit-animation: move 35s linear 10s infinite backwards;
@@ -32,10 +32,10 @@
       top: 350px;
     z-index: 300;
     fill: #eee;
-    -webkit-animation: move 40s linear 20s infinite backwards;
-    -moz-animation: move 40s linear 20s infinite backwards;
-    -o-animation: move 40s linear 20s infinite backwards;
-    animation: move 40s linear 20s infinite backwards;
+    -webkit-animation: move 40s linear 15s infinite backwards;
+    -moz-animation: move 40s linear 15s infinite backwards;
+    -o-animation: move 40s linear 15s infinite backwards;
+    animation: move 40s linear 15s infinite backwards;
   }
   
   @-webkit-keyframes move {
