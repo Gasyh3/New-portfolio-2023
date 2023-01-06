@@ -2,37 +2,50 @@
 
 
 .clouds {
-    width: 200x;
     height: 300px;
     position: absolute;
   }
   
   .cloud1 {
-      top: 10px;
+      top: -10px;
     z-index: 100;
     animation: move 5s linear infinite,
     moveright 45s linear infinite;
   }
   
   .cloud2 {
-      top: 140px;
+      top: 200px;
     z-index: 200;
     animation: move 35s linear 2s infinite backwards,
     moveright 35s linear 2s infinite backwards;
   }
 
   .cloud3 {
-    top: 350px;
+    top: 450px;
   z-index: 300;
   animation: move 40s linear 5s infinite backwards, 
-  moveright 40s linear 5s infinite backwards;
+  moveright 40s linear 15s infinite backwards;
 }
 
 .cloud4 {
-  top: 100px;
+  top: 0px;
 z-index: 300;
-animation: move 20s linear 7s infinite backwards,
+animation: move 5s linear 30s infinite backwards,
 moveright 30s linear 15s infinite backwards;
+}
+
+.cloud5 {
+  top: 300px;
+  z-index: 200;
+  animation: move 40s linear 10s infinite backwards, 
+  moveright 40s linear 5s infinite backwards;
+}
+
+.cloud6 {
+  top: -100px;
+  z-index: 100;
+  animation: move 45s linear 5s infinite backwards, 
+  moveright 40s linear 5s infinite backwards;
 }
  
   @keyframes move {

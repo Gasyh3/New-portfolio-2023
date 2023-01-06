@@ -11,6 +11,8 @@ const CloudsSVG = (props) => (
     <img src={CloudPNG} alt="Cloud blue" className="clouds cloud2" />
     <img src={CloudPNG} alt="Cloud blue" className="clouds cloud3" />
     <img src={CloudPNG} alt="Cloud blue" className="clouds cloud4" />
+    <img src={CloudPNG} alt="Cloud blue" className="clouds cloud5" />
+    <img src={CloudPNG} alt="Cloud blue" className="clouds cloud6" />
   </div>
 )
 
