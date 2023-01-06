@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import Expertise  from './components/Expertise/Expertise'
+import Projects from './components/Projects/Projects'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Hero />
       <Expertise />
+      <Projects />
       </div>
     </div>
   )

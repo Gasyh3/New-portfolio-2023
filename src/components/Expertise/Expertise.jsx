@@ -27,6 +27,11 @@ function Expertise() {
                             Developpement
                         </h5>
                     </div>
+                    <div className="expertise__card__content">
+                <p className="card__text">
+                    Passionné de UI/UX, je programme généralement en ReactJS et en SCSS.
+                </p>
+                </div>
                 </div>
                 <div className="expertise__card expertise__card--orange">
                 <div className="expertise__card__head">
@@ -41,23 +46,37 @@ function Expertise() {
                             Developpement
                         </h5>
                     </div>
+                    <div className="expertise__card__content">
+                <p className="card__text">
+                    J'utilise NodeJS pour le backend et Express pour le routing.
+                </p>
+                </div>
                 </div>
                 <div className="expertise__card">
                 <div className="expertise__card__head">
-                <a href="https://www.java.com/fr/" target="_blank">
+                    <a href="https://www.java.com/fr/" target="_blank">
                         <img src={oopLogo} className="logo react" alt="Java logo" />
                     </a>
-                        <h5 className="card__title">
-                            <span className="underline">
-                                Software
-                            </span>
-                            <br />
+                    <h5 className="card__title">
+                        <span className="underline">
+                            Software
+                        </span>
+                        <br />
                             Developpement
-                        </h5>
-                    </div>
+                     </h5>
+                </div>
+
+                <div className="expertise__card__content">
+                <p className="card__text">
+
+J'ai pu expérimenter durant mon apprentissage
+la programmation orientée objet avec Java et C++.
+</p>
+                </div>
                 </div>
             </section>
         </main>
+        
     </div>
   )
 }

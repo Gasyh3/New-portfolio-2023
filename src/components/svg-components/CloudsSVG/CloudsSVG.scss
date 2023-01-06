@@ -10,39 +10,62 @@
   .cloud1 {
       top: 10px;
     z-index: 100;
-    fill: #ababab;
-    /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
-    -webkit-animation: move 25s linear infinite;
-    -moz-animation: move 25s linear infinite;
-    -o-animation: move 25s linear infinite;
-    animation: move 25s linear infinite;
+    animation: move 5s linear infinite,
+    moveright 45s linear infinite;
   }
   
   .cloud2 {
       top: 140px;
     z-index: 200;
-    fill: #cccccc;
-    -webkit-animation: move 35s linear 10s infinite backwards;
-    -moz-animation: move 35s linear 10s infinite backwards;
-    -o-animation: move 35s linear 10s infinite backwards;
-    animation: move 35s linear 10s infinite backwards;
+    animation: move 35s linear 2s infinite backwards,
+    moveright 35s linear 2s infinite backwards;
   }
 
   .cloud3 {
-      top: 350px;
-    z-index: 300;
-    fill: #eee;
-    -webkit-animation: move 40s linear 15s infinite backwards;
-    -moz-animation: move 40s linear 15s infinite backwards;
-    -o-animation: move 40s linear 15s infinite backwards;
-    animation: move 40s linear 15s infinite backwards;
+    top: 350px;
+  z-index: 300;
+  animation: move 40s linear 5s infinite backwards, 
+  moveright 40s linear 5s infinite backwards;
+}
+
+.cloud4 {
+  top: 100px;
+z-index: 300;
+animation: move 20s linear 7s infinite backwards,
+moveright 30s linear 15s infinite backwards;
+}
+ 
+  @keyframes move {
+    0% {
+      -webkit-transform: translateY(0px);
+      
+    }
+
+    25% {
+      -webkit-transform: translateY(20px);
+    }
+    50% {
+      -webkit-transform: translateY(-50px);
+    }
+    75% {
+      -webkit-transform: translateY(10px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+    }
   }
   
-  @-webkit-keyframes move {
-    from {-webkit-transform: translateX(-400px);}
-    to {-webkit-transform: translateX(1350px);}
+  @keyframes moveright {
+    from {
+      transform: translateX(-400px);
+    }
+    
+    to {
+      transform: translateX(1350px);
+    }
+
   }
-  
+
   .background {
 	width: 100%;
   height: 700px;
