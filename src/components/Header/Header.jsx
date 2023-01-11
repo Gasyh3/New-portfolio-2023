@@ -22,7 +22,6 @@ function Header() {
         <a href="https://www.linkedin.com/in/rakoto-kevin/" target="_blank">
           <img src={linkedinLogo} className="header__link linkedin" alt="linkedin logo" />
         </a>
-        
       </nav>
     </div>
   )

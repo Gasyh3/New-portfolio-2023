@@ -11,12 +11,14 @@ import viteLogo from '../../assets/vitejs.svg'
 import sassLogo from '../../assets/sass.svg'
 import pythonLogo from '../../assets/python.svg'
 import cLogo from '../../assets/c.svg'
+import Ciel from '../Sky/Sky'
 
 //Logo purplecat clicak effet on hover text appear click there
 function Expertise() {
   return (
     <div className="expertise">
-        <CloudsSVG />
+        <Ciel />
+
         <h1 className="title">Expertise</h1>
         <main className="expertise__content">
             <section className="expertise__cards">

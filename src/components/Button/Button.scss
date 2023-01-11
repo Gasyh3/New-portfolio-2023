@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+@import "../../main.scss";
+
+button {
+    height: 100px;
+    width: 250px;
+    border-radius : 5px;
+    border : 2px solid #F8D90F;
+    cursor: pointer;
+    padding: 5px;
+    background-color : transparent;
+    color: $color-5;
+    font-family: $font-primary;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: #F8D90F;
+    color: $color-2;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    button {
+        height: 75px;
+        width: 150px;
+        font-size: 15px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 10%;
+    }
+}

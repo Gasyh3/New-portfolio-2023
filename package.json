@@ -9,12 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "@react-three/drei": "^9.50.4",
     "@react-three/fiber": "^8.10.0",
+    "@react-three/rapier": "^0.11.3",
+    "@types/lodash": "^4.14.191",
     "@types/three": "^0.147.1",
     "framer-motion": "^8.2.0",
+    "leva": "^0.9.34",
+    "lodash": "^4.17.21",
+    "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2",
+    "react-scripts": "^5.0.1",
     "sass": "^1.57.1",
     "three": "^0.148.0"
   },

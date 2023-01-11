@@ -7,7 +7,7 @@ $color-2: #3D256A;
 $color-3: #A64AEE;
 $color-4: #F69A36;
 $color-5: #FFFFFF;
-
+$color-6: #03A33F;
 $font-primary: 'Ubuntu', sans-serif;
 
 .fontcolor-1 {
@@ -61,7 +61,7 @@ font-family: $font-primary;
     &:after {
       content: " ";
       position: absolute;
-      top: 2000px;
+      top: 20000px;
       width: 1px;
       height: 1px;
       background: transparent;
@@ -79,7 +79,7 @@ font-family: $font-primary;
     &:after {
       content: " ";
       position: absolute;
-      top: 2000px;
+      top: 20000px;
       width: 2px;
       height: 2px;
       background: transparent;
