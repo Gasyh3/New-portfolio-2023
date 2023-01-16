@@ -1,0 +1,53 @@
+@import '../../main.scss';
+
+.cardprojects {
+    height: 40vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    &__photo {
+        height: 55%;
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        background-color: $color-2;
+        height: 45%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: $color-5;
+        margin-top: 10px;
+    }
+
+    &__description {
+        color: $color-5;
+
+    }
+}
+
+.logoCardProjects {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 1.5em;
+    will-change: filter;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .cardprojects {
+        width: 100%;
+    }
+}

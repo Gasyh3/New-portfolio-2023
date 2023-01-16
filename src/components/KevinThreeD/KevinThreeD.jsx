@@ -6,11 +6,12 @@ import {
   OrbitControls,
 } from "@react-three/drei";
 import React from "react";
+import "../Hero/Hero.scss";
 
 export default function KevinThreeD() {
   return (
-    <div style={{ width: "70vw", height: "60vh" }}>
-    <Canvas orthographic camera={{ position: [0, 0, 100], zoom: 75 }}>
+    <div className="kevin__container" >
+    <Canvas orthographic camera={{ position: [-50, -25, 150], zoom: 75, fov: 15}}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 10]} />
       <Scene />

@@ -18,6 +18,15 @@ $font-primary: 'Ubuntu', sans-serif;
     color: $color-2;
 }
 
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -31,7 +40,12 @@ font-family: $font-primary;
   font-family: $font-primary;
   font-size: 4rem;
   color: $color-5;
+}
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 @function multiple-box-shadow ($n) {

@@ -10,7 +10,7 @@ function Sphere(props) {
   return (
     <mesh {...props}>
       <sphereGeometry args={[1, 64, 64]} />
-      <meshPhysicalMaterial map={texture} clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.5} />
+      <meshPhysicalMaterial map={texture} clearcoat={0.1} clearcoatRoughness={0} roughness={0} metalness={0.25} />
     </mesh>
   )
 }
@@ -23,18 +23,19 @@ export default function Ciel() {
         <hemisphereLight intensity={0.45} />
         <spotLight angle={0.4} penumbra={1} position={[20, 30, 2.5]} castShadow shadow-bias={-0.00001} />
         <directionalLight color="white" position={[-10, -10, 0]} intensity={1.5} />
+        <Sphere scale={8} position={[0, 0, 0]} />
         <Cloud scale={1} position={[20, 0, 0]} />
-        <Sphere scale={5} position={[0, 0, 0]} />
-        <Cloud scale={0.5} position={[-30, 0, 0]} />
-        <Cloud scale={0.5} position={[60, 0, 10]} />
+        <Cloud scale={1} position={[-30, 0, 0]} />
+        <Cloud scale={1.5} position={[0, 0, 10]} />
         <Cloud scale={0.25} position={[-25, 20, 0]} />
-        <Cloud scale={0.5} position={[60, -10, 10]} />
+        <Cloud scale={1} position={[60, -10, 10]} />
         <Environment preset="city" />
  
 
         <OrbitControls 
         
-      autoRotate={true}/>
+      autoRotate={true}
+      autoRotateSpeed={0.25}/>
       </Suspense>
     </Canvas>
     </div>
